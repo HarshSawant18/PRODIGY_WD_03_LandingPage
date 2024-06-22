@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.785);
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background: url('https://prodigyinfotech.dev/images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveUpDown 5s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.unique-button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.unique-button:hover {
+    background-color: #ff2e00;
+}
+
+.feature-section,
+.internship-section,
+.contact-section {
+    padding: 50px 0;
+}
+
+.feature-card,
+.internship-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+.footer {
+    background-color: #212b36;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+p {
+    color: #637381;
+}
